@@ -1,0 +1,49 @@
+# for arquivo in Path.iterdir(Path.cwd()):
+#    print(arquivo.name)
+
+# nome_arquivo = 'Pai.pdf'
+# arquivo_pdf = pyf.PdfReader(nome_arquivo)
+
+
+# -- Importantes:
+
+#Pecorrer todas as paginas e escrever(w) ou atualizar(a) além de criar dentro da pasta 'paginas' um arquivo pdf para cada pagina!
+    # for pagina in arquivo_pdf.pages:
+    #     with open('textos.txt','w') as text:
+    #         text.write(pagina.extract_text())
+             
+    # for i,pagina in enumerate(arquivo_pdf.pages):
+    #     arquivo_novo = pyf.PdfWriter()
+    #     arquivo_novo.add_page(pagina)
+        
+    #     with Path('paginas/Arquivo{}.pdf'.format(i)).open('wb') as arquivo_final:
+    #         arquivo_novo.write(arquivo_final)
+
+
+# Criar um arquivo pdf final com a pagina tal ate a pagina tan
+    # paginas = arquivo_pdf.pages[160:169] # 160 até pagina 168
+
+    # novo_pdf = pyf.PdfWriter()
+    # for num_pages in paginas:
+    #     nome_arquivo = f'paginas/Arquivo{num_pages}.pdf'
+    #     arquivo_pdf = pyf.PdfReader(nome_arquivo)
+    #     pagina = arquivo_pdf.pages[0]
+    #     novo_pdf.add_page(pagina)
+
+    # with Path('Conclusão.pdf'.format(i)).open('wb') as arquivo_final:
+    #         novo_pdf.write(arquivo_final)
+
+# Obter o texto da pagina pdf e no fim escrever com um arquivo txt com o conteudo!
+    # nome_arquivo2 = 'paginas/Arquivo0.pdf'
+    # arquivo_pdf2 = pyf.PdfReader(nome_arquivo2)
+
+    # for pagina in arquivo_pdf2.pages:
+    #     textos = pagina.extract_text()
+    #     with open('textos.txt','w') as text:
+    #         text.write(pagina.extract_text())
+            
+    #     #print(textos.replace('\n',''))
+
+    # with open('textos.txt','r') as txts:
+    #     for txt in txts:
+    #         print(txt)
